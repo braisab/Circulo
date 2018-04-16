@@ -1,6 +1,6 @@
 package circulo;
 /*
- * Clase Circulo para pruebas en NetBeans 
+ * Clase Circulo para probas en NetBeans 
  */
 public class Circulo {
     private int x;
@@ -8,8 +8,8 @@ public class Circulo {
     private double radio;
 
     /*
-     * Constructor para la clase Circulo que asigna los valores de las
-     * coordenadas x, y y el valor del radio
+     * Constructor para a clase Circulo que asigna valores das
+     * coordenadas x, y así como valor do radio
      */
     public Circulo(int valorX, int valorY, double valorRadio) {
         establecerX(valorX);
@@ -21,7 +21,7 @@ public class Circulo {
         x=valorX;
     }
 
-    public int obtenerX() {
+    public int obterX() {
         return x;
     }
 
@@ -29,7 +29,7 @@ public class Circulo {
         y=valorY;
     }
 
-    public int obtenerY() {
+    public int obterY() {
         return y;
     }
 
@@ -38,19 +38,19 @@ public class Circulo {
         radio=(valorRadio < 0.0 ? 0.0 : valorRadio);
     }
 
-    public double obtenerRadio() {
+    public double obterRadio() {
         return radio;
     }
 
-    public double obtenerDiametro() {
+    public double obterDiametro() {
         return radio * 2;
     }
 
-    public double obtenerCircunferencia() {
-        return Math.PI * obtenerDiametro();
+    public double obterCircunferencia() {
+        return Math.PI * obterDiametro();
     }
 
-    public double obtenerArea() {
+    public double obterArea() {
         return Math.PI * radio * radio;
     }
     
